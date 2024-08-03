@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title Template 2
+  body
+    h1 Using pug loops for JavaScript data
+    p This template loops through an array of states and populations.
+    ul
+      each state in states
+        li #{state.name}: #{state.population}

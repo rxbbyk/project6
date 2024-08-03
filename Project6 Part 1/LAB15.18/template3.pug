@@ -1,0 +1,17 @@
+//- skeleton mixin that you must fill out
+mixin statementMixin(statement)
+  if statement
+    p= statement
+  else
+    p This is the default statement.
+
+//- complete body of pug template
+doctype html
+html
+  head
+    title Template 3
+  body
+    h1 Using mixins and blocks
+    p This template uses a mixin with a block.
+    +statementMixin()
+    +statementMixin('This is a custom statement.')
